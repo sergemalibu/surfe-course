@@ -7,7 +7,7 @@ void main() {
   final int sumAge;
   final int half;
   int ageMachinery;
-  final mapMachinery = ({});
+  final mapMachinery = {};
 
   for (final e in mapBefore2010.values) {
     for (final territory in e) {

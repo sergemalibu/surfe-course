@@ -9,18 +9,9 @@ void main() {
   int ageMachinery;
   final mapMachinery = {};
 
-  for (final e in mapBefore2010.values) {
-    for (final territory in e) {
-      //Получаем дату выпуска техники
-      for (final agriculturalMachinery in territory.machineries) {
-        mapMachinery.addAll({
-          agriculturalMachinery.hashCode: agriculturalMachinery.releaseDate
-        });
-      }
-    }
-  }
+final mashineris = [...mapBefore2010.values, ...mapAfter2010.values];
 
-  for (final e in mapAfter2010.values) {
+  for (final e in mashineris) {
     for (final territory in e) {
       //Получаем дату выпуска техники
       for (final agriculturalMachinery in territory.machineries) {
